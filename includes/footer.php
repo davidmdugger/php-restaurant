@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <p><strong>Phone</strong></p>
-                    <p>402-432-1989</p>
+                    <p>402-000-000</p>
                     <hr>
                 </div>
                 <div class="col-sm-4">
@@ -24,7 +24,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <p>&copy;2017 David Dugger - All rights reserved</p>
+                    <p>&copy;<?php date('Y'); ?> - All rights reserved</p>
                 </div>
             </div>
         </div>
