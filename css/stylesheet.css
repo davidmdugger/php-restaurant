@@ -1,0 +1,163 @@
+/* ==============================
+            GLOBAL
+================================= */
+
+
+
+/* ===============================
+            NAVBAR
+================================== */
+.navbar-brand{
+    color: #0000ff!important;
+}
+
+#navbar li a{
+    color: #fff!important;
+}
+
+#navbar li a:hover{
+    background-color: #555;
+}
+
+.navbar{
+    z-index: 1;
+}
+
+/* ===============================
+            BANNER
+================================== */
+#main-banner img{
+    margin-top: 50px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* ================================
+            HOMEPAGE CONTENT
+=================================== */
+#home-content{
+    text-align: center;
+}
+
+#home-content p{
+    padding: 20px 30px;
+}
+
+/* ===================================
+            TEAM PAGE
+====================================== */
+#team-members{
+    text-align: center;
+}
+
+#team-members img{
+    margin-top: 25px;
+}
+
+/* ============================
+            MENU PAGE
+=============================== */
+#menu-info{
+    text-align: center;
+}
+
+#menu-info ul{
+    list-style: none;
+}
+
+#menu-info a{
+    color: #0000ff;
+}
+
+#menu-info a:hover{
+    color: #ff0000;
+}
+
+/* ============================
+CONTACT PAGE
+=============================== */
+#contact-form-content h2{
+    text-align: center;
+}
+
+#contact-form-content span{
+    color: #ff0000;
+    font-weight: bold;
+}
+
+form{
+    border: 1px solid #eee;
+    margin: 50px 20%;
+    padding: 20px 0 20px 5%;
+    box-shadow: 2px 2px 20px #555;
+}
+
+label, input, textarea{
+    display: block;
+}
+
+label{
+    margin-top: 20px;
+}
+
+input, textarea{
+    width: 80%;
+}
+
+textarea{
+    max-width: 90%;
+}
+
+#subscribe, #subscribe-message{
+    margin: 20px 0;
+    width: auto;
+    display: inline!important;
+}
+
+#subscribe-message{
+    padding-left: 10px;
+}
+
+#invalid{
+    color: #ff0000;
+    font-weight: bold;
+}
+
+
+/* =============================
+            FOOTER
+================================ */
+#bottom-footer{
+    width: 100%;
+    background-color: #222;
+    color: #0000ff;
+    margin-top: 40px;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+#bottom-footer hr{
+    border-color: #ff0000;
+}
+
+#bottom-footer span{
+    color: #ff0000!important;
+}
+
+/* =============================
+            MEDIA QUERIES
+================================ */
+
+@media only screen and (min-width: 768px){
+    #main-banner{
+    }
+    
+    #bottom-footer hr{
+        display: none;
+    }
+} 
+
+@media only screen and (min-width: 1200px){
+    #main-banner{
+    }
+}
