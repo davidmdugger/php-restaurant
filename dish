@@ -1,0 +1,39 @@
+<?php
+    include('includes/header.php');
+
+    function strip_bad_chars($input){
+        $output = preg_replace("/[^a-zA-Z0-9_-]/", "", $input);
+        return $output;
+    }
+    
+    if (isset($_GET['item'])){
+        $menuItem = strip_bad_chars($_GET['item']);
+        
+        $dish = $menuItems[$menuItem];
+    }
+
+    // CALCULATE SUGGESTED TIP
+    function suggestedTip($price, $tip){
+        $totalTip = $price * $tip;
+        echo money_format('%.2n', $totalTip);
+    }
+?>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h3><?php echo $dish['title']; ?> $<?php echo $dish['price']; ?></h3>
+                <p><?php echo $dish['blurb']; ?></p>
+                
+                <p>Suggested Beverage: <?php echo $dish['drink']; ?></p>
+                
+                <p><small><strong>Suggested Tip: <?php suggestedTip($dish['price'], 0.20); ?></strong></small></p>
+                
+                <hr>
+                
+                <a href="menu.php">&laquo; Back to Menu</a>
+            </div>
+        </div>
+    </div>
+    
+<?php include('includes/footer.php'); ?>
