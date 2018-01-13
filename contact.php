@@ -38,7 +38,7 @@
 
                         // ADD THE RECIPIENT EMAIL TO A VARIABLE
 
-                        $to = "davidmdj86@gmail.com";
+                        $to = "nonfuctional@email.com";
 
                         // CREATE A SUBJECT
                         $subject = "$name sent you a message via Dugger's Deli Contact form";
